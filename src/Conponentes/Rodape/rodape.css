@@ -1,0 +1,28 @@
+/* src/componentes/Rodape/index.js */
+
+.footer {
+    background: linear-gradient(white, red, black);
+    color: #FFF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.footer ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style: none;
+}
+
+.footer .imagem img {
+    width: 50%;
+
+}
+
+.footer p {
+    font-weight: 700;
+    font-size: 18px;
+}
