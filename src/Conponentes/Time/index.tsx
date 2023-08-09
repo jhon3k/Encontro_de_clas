@@ -23,6 +23,8 @@ const Time = (props: TimeProps) => {
                         key={jogador.nome} nome={jogador.nome}
                         apelido={jogador.apelido}
                         imagem={jogador.imagem}
+                        data={jogador.data}
+
                     />)}
             </div>
         </section>

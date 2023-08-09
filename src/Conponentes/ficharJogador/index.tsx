@@ -1,13 +1,14 @@
 import './FicharJogador.css'
 
 interface FicharJogadorProps {
-    nome: string;
     apelido: string;
-    imagem: string;
     corDeFundo: string;
+    data: string
+    imagem: string;
+    nome: string;
 }
 
-const FicharJogador = ({ nome, apelido, imagem, corDeFundo } : FicharJogadorProps) => {
+const FicharJogador = ({ nome, apelido, imagem, corDeFundo, data } : FicharJogadorProps) => {
     return (
         <div className='otaku'>
             <div className='cabecalho' style={{ backgroundColor: corDeFundo}}>
@@ -17,6 +18,7 @@ const FicharJogador = ({ nome, apelido, imagem, corDeFundo } : FicharJogadorProp
             <div className='rodape'>
                 <h4>{nome}</h4>
                 <h5>{apelido}</h5>
+                <h5>{new Date(data).toLocaleDateString()}</h5>
             </div>
         </div>
     )
